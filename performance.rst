@@ -89,6 +89,11 @@ used byte code cache is `APC`_.
 Use the OPcache class preloading
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. caution::
+
+    OPcache preloading is a new feature in PHP 7.4, and as of the current version (7.4.3)
+    there are still bugs. This feature may or may not work for your project.
+
 Starting from PHP 7.4, OPcache can compile and load classes at start-up and
 make them available to all requests until the server is restarted, improving
 performance significantly.
